@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lost & Found Campus</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Lost & Found Campus</h1>
+
+<p>Sistem Pelaporan Barang Hilang dan Ditemukan</p>
+
+</header>
+
+<section class="container">
+
+<div class="form-box">
+
+<h2>Tambah Laporan</h2>
+
+<form id="formBarang">
+
+<input
+type="hidden"
+id="id">
+
+<label>Nama Barang</label>
+
+<input
+type="text"
+id="nama"
+required>
+
+<label>Kategori</label>
+
+<select id="kategori">
+
+<option>Elektronik</option>
+
+<option>Pakaian</option>
+
+<option>Dokumen</option>
+
+<option>Aksesoris</option>
+
+<option>Lainnya</option>
+
+</select>
+
+<label>Status</label>
+
+<select id="status">
+
+<option>Hilang</option>
+
+<option>Ditemukan</option>
+
+</select>
+
+<label>Lokasi</label>
+
+<input
+type="text"
+id="lokasi"
+required>
+
+<label>Deskripsi</label>
+
+<textarea
+id="deskripsi"
+rows="4"></textarea>
+
+<label>Tanggal</label>
+
+<input
+type="date"
+id="tanggal">
+
+<button
+type="submit">
+
+Simpan Data
+
+</button>
+
+</form>
+
+</div>
+
+<div class="table-box">
+
+<h2>Daftar Barang</h2>
+
+<input
+type="text"
+id="search"
+placeholder="Cari nama barang...">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Nama</th>
+
+<th>Kategori</th>
+
+<th>Status</th>
+
+<th>Lokasi</th>
+
+<th>Tanggal</th>
+
+<th>Aksi</th>
+
+</tr>
+
+</thead>
+
+<tbody id="dataBarang">
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
